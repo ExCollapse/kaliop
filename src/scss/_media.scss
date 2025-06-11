@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .feed {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+}
