@@ -1,0 +1,29 @@
+.navbar {
+  background: white;
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
