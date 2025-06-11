@@ -3,61 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaliop</title>
+  <title>Kaliop Poland</title>
   <link rel="stylesheet" href="/src/scss/main.scss" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/7.4.0/css/materialdesignicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/public/logo.svg" type="image/svg">
 </head>
 <body>
 
-  <div class="app">
-
-    <header class="header">
-      <div class="logo">
-        <img src="/public/logo.svg" alt="Logo Kaliop" />
+  <div class="page-container">
+    <div class="header-banner">
+      <div class="banner-content">
+        <div class="banner-illustration"></div>
       </div>
-      <div class="info">
-        <h1>Kaliop Poland</h1>
-        <p class="likes">403 polubienia · 458 obserwujących</p>
-      </div>
-      <div class="actions">
-        <button class="btn message">Wyślij wiadomość</button>
-        <button class="btn like"><i class="mdi mdi-thumb-up-outline"></i> Lubisz to</button>
-        <button class="btn search"><i class="mdi mdi-magnify"></i> Szukaj</button>
-      </div>
-    </header>
+    </div>
 
-    <nav class="navbar">
-      <a href="#" class="active">Posty</a> 
-      <a href="#">Informacje</a>
-      <a href="#">Wzmianki</a>
-      <a href="#">Opinie</a>
-      <a href="#">Obserwujący</a>
-      <a href="#">Zdjęcia</a>
-      <a href="#" class="more mdi mdi-dots-horizontal"></a>
-    </nav>
-
-    <main class="feed">
-      <aside class="sidebar">
-        <p><strong>Lokalizacja:</strong> Portowa 13B, Słupskie, Polska</p>
-        <p><strong>Email:</strong> biuro@kaliop.pl</p>
-        <p><strong>Strona:</strong> kaliop.pl</p>
-        <p><strong>Status:</strong> Zamknięte teraz</p>
-      </aside>
-
-      <div class="content">
-        <div class="post">
-          <h2>Prezentacja</h2>
-          <p>Dostawca rozwiązań IT dla biznesu. 20 lat doświadczenia na rynku, setki zrealizowanych projektów.</p>
+    <div class="profile-section">
+      <div class="profile-info">
+        <div class="profile-avatar">
+          <img src="/public/logo.svg" alt="Kaliop Logo">
         </div>
-        <div class="post">
-          <h3>Kaliop Poland • 21 czerwca o 08:51</h3>
-          <p>Kolejne spotkanie Rady Pracodawców w Instytucie Nauk Ścisłych i Technicznych za nami! Rozmawialiśmy o czymś dużym – Centrum Nowoczesnych Technologii...</p>
+        <div class="profile-details">
+          <h1>Kaliop Poland</h1>
+          <div class="profile-stats">413 likes • 474 followers</div>
+          <button class="send-message">📩 Wyślij wiadomość</button>
+          <button class="like">👍 Lubisz to</button>
+          <button class="search">🔎 Szukaj</button>
         </div>
       </div>
-    </main>
+    </div>
 
+    <div class="nav-tabs">
+      <a href="#" class="nav-tab active">Posts</a>   
+      <a href="#" class="nav-tab">About</a>
+      <a href="#" class="nav-tab">Photos</a>
+      <a href="#" class="nav-tab">Videos</a>
+      <div class="more-options">⋯</div>
+    </div>
+
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="intro-card">
+          <h2>Intro</h2>
+          <div class="intro-text">
+            Dostawca rozwiązań IT dla biznesu. 20 lat doświadczeń na rynku, setki zrealizowanych projektów.
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">🏢</span>
+            <span>Page • Business service</span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <span>Portowa 13B, Słupskie, Poland</span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <span>59 841 37 14</span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <span>biuro@kaliop.pl</span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">🌐</span>
+            <a href="https://kaliop.pl"  class="info-link" target="_blank" rel="noopener noreferrer">kaliop.pl</a>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <span class="status-open">Open now</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-feed">
+        <div class="post-card">
+          <div class="post-header">
+            <div class="post-avatar">
+              <img src="/public/logo.svg" alt="Kaliop Logo" />
+            </div>
+            <div class="post-info">
+              <h3>Kaliop Poland</h3>
+              <div class="post-time">5d • 🌍</div>
+            </div>
+          </div>
+          <div class="post-content">
+            Biegliśmy i my! 💪‍🏃‍♀️🏃<br><br>
+            Dołączamy do świętowania 56-lecia <a href="https://www.facebook.com/uniwersytetpomorskiwslupsku"  class="info-link">Uniwersytet Pomorski w Słupsku</a>, co dziś lekko odczuwamy w kolanach, ale zdecydowanie było warto!<br>
+            Trasa niby nie za długa, ale nudy nie było 😄 Kto biegł, ten wie 😉<br><br>
+            Dziękujemy za dobrą zabawę!
+          </div>
+          <div class="post-images">
+            <div class="post-image">
+              <img src="/public/1.jpg" alt="Zdjęcie z biegu" />
+            </div>
+            <div class="post-image">
+              <img src="/public/2.jpg" alt="Zdjęcie z ceremonii" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 </body>
 </html>
