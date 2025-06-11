@@ -1,13 +1,37 @@
-@media (min-width: 768px) {
-  .feed {
-    grid-template-columns: 3fr 1fr;
+@media (max-width: 768px) {
+  .banner-content {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    font-size: 32px;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .banner-illustration {
+    position: static;
+    width: 100%;
+    height: 150px;
+  }
+
+  .main-content {
+    flex-direction: column;
   }
 
   .sidebar {
-    display: block;
+    flex: none;
+    order: 2;
   }
-
-  .navbar {
-    flex-wrap: nowrap;
-  }
+}
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.profile-details {
+  font-size: 27px;
 }

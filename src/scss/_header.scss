@@ -1,37 +1,68 @@
-.header {
-  background: white;
-  padding: 1rem 0;
+.header-banner {
+  height: 348px;
+  background: url('/public/cover.jpg') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 1rem;
-  }
-
-  .info {
-    flex-grow: 1;
-  }
-
-  .actions {
-    display: flex;
-    gap: 1rem;
-  }
+  padding: 40px 60px;
 }
 
-.likes {
+.banner-text,
+.banner-illustration {
+  display: none;
+}
+
+.profile-section {
+  padding: 20px 16px 0;
+  position: relative;
+}
+
+.profile-info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  margin-top: -84px;
+  margin-right: 16px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.profile-details h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.profile-stats {
   color: $secondary-color;
-  margin: 0.5rem 0;
-}
-
-.btn {
-  background-color: $primary-color;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 16px;
 }
